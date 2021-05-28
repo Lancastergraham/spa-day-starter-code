@@ -24,3 +24,8 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+#servicesMenu {
+    border: 1px solid red;
+    border-radius: 5px;
+}
