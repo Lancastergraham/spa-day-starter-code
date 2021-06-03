@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments :: header"></header>
+
+<form method="post" th:action="@{/user/add}">
+    <div>
+        <lable>Name
+            <input type="text" name="name">
+        </lable>
+    </div>
+    <div>
+        <lable>Email
+            <input type="email" name="email">
+        </lable>
+    </div>
+    <div>
+        <lable>Password
+            <input type="password" name="password">
+        </lable>
+    </div>
+    <div>
+        <lable>Verify Password
+            <input type="password" name="password">
+        </lable>
+    </div>
+    <div>
+        <input type="submit" value="YOLO">
+    </div>
+
+</form>
+</body>
+</html>
