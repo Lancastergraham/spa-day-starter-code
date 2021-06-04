@@ -2,33 +2,38 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments :: head"></head>
 <body>
-<header th:replace="fragments :: header"></header>
+<header th:replace="fragments::header"></header>
 
-<form method="post" th:action="@{/user/add}">
+
+
+<form method="post" th:action="@{/user}">
     <div>
-        <lable>Name
-            <input type="text" name="name">
-        </lable>
+        <label>Name
+            <input type="text" name="username" th:value="${username}">
+        </label>
     </div>
     <div>
-        <lable>Email
-            <input type="email" name="email">
-        </lable>
+        <label>Email
+            <input type="email" name="email" th:value="${email}">
+        </label>
     </div>
     <div>
-        <lable>Password
+        <label>Password
             <input type="password" name="password">
-        </lable>
+        </label>
     </div>
     <div>
-        <lable>Verify Password
-            <input type="password" name="password">
-        </lable>
+        <label>Verify Password
+            <input type="password" name="verify">
+        </label>
     </div>
+
     <div>
-        <input type="submit" value="YOLO">
+        <input type="submit" value="add User to Jared's soul collection">
     </div>
+    <p th:text="${error}"></p>
 
 </form>
+
 </body>
 </html>

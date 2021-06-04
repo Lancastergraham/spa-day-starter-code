@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments::head"></head>
 <body>
-<header th:replace="fragments :: header"></header>
+    <p th:text="'Welcome ' + ${user.username} + '!'"></p>
+    <a href="@{/}">Select your spa Services here</a>
 </body>
 </html>
